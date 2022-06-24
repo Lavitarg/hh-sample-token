@@ -2,13 +2,9 @@ import("@nomiclabs/hardhat-waffle");
 import ("@nomiclabs/hardhat-etherscan");
 import "@nomiclabs/hardhat-ethers";
 import {environment} from "./environment";
-// import "./tasks/transfer";
-// import "./tasks/transferFrom";
-// import "./tasks/approve";
-
-/**
- * @type import('hardhat/config').HardhatUserConfig
- */
+import "./tasks/transferFrom.ts";
+import "./tasks/transfer.ts";
+import "./tasks/approve.ts";
 
 const PK = environment.pk;
 const INFURA_URL = environment.infuraUrl;
